@@ -9,15 +9,20 @@
     tools:context=".MainActivity">
 
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/main_rv"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1" />
+
+
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/main_fragment"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:name="com.example.fragmentactivity.NameFragment"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:textSize="40sp"
         android:layout_weight="1"/>
 </LinearLayout>
